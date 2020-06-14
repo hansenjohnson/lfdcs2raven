@@ -13,6 +13,7 @@ For more information contact hansen.johnson@dal.ca
 ```
 library(devtools)
 install_github('hansenjohnson/lfdcs2raven')
+library(lfdcs2raven)
 ```
  
 ### Converting LFDCS autodetections to a selection table
