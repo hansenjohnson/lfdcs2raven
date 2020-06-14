@@ -18,8 +18,8 @@ library(lfdcs2raven)
  
 ### Converting LFDCS autodetections to a selection table
 ```
-lfdcs_to_raven(lfdcs_file = 'autodetections.csv',
-               raven_file = 'selections.txt',
+lfdcs_to_raven(lfdcs_file = 'lfdcs_autodetections.csv',
+               raven_file = 'raven_selections.txt',
                call_types = c(1,2,3,4,5,6),
                max_mdist = 5,
                audio_start_time = '2017-01-01 00:00:00')

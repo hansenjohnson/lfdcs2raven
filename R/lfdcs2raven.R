@@ -27,15 +27,15 @@ NULL
 #' '\dontrun{
 #' # export all autodetections
 #' lfdcs_to_raven(
-#'  lfdcs_file = 'autodetections.csv',
-#'  raven_file = 'selections.txt',
+#'  lfdcs_file = 'lfdcs_autodetections.csv',
+#'  raven_file = 'raven_selections.txt',
 #'  audio_start_time = '2017-08-01 17:44:27',
 #' )
 #'
 #' # export high quality right whale autodetections
 #' lfdcs_to_raven(
-#'  lfdcs_file = 'autodetections.csv',
-#'  raven_file = 'selections.txt',
+#'  lfdcs_file = 'lfdcs_autodetections.csv',
+#'  raven_file = 'raven_selections.txt',
 #'  audio_start_time = '2017-08-01 17:44:27',
 #'  call_types = c(5,6,7,8,9),
 #'  max_mdist = 3
