@@ -62,6 +62,7 @@ lfdcs_to_raven <- function(lfdcs_file,
   ln <- grep(pattern = 'Mahalanobis distance', x = hd)
 
   # read in and format lfdcs autodetections
+  message('Reading in autodetections...')
   lf <- readr::read_csv(lfdcs_file, skip = ln, col_types = readr::cols(),
                         col_names = c('call_type', 'start_time', 'end_time', 'duration', 'min_freq', 'max_freq', 'bandwidth','amplitude','mdist')) %>%
     dplyr::mutate(
@@ -110,7 +111,7 @@ lfdcs_to_raven <- function(lfdcs_file,
     View = 'Spectrogram',
     Channel = 1,
     `Begin Time (s)` = lf$start_time,
-    `End Time (s)` = lf$start_time,
+    `End Time (s)` = lf$end_time,
     `Low Freq (Hz)` = lf$min_freq,
     `High Freq (Hz)` = lf$max_freq,
     call_type = lf$call_type,
