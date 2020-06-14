@@ -22,6 +22,7 @@
 #'
 #' @author Hansen Johnson (\email{hansen.johnson@@dal.ca})
 #'
+#' @export
 timestamp_dmon <- function(dmon_dir, prefix = '',suffix = ''){
 
   # list wav files
@@ -146,6 +147,7 @@ timestamp_dmon <- function(dmon_dir, prefix = '',suffix = ''){
 #'
 #' @author Hansen Johnson (\email{hansen.johnson@@dal.ca})
 #'
+#' @export
 undo_timestamp_dmon <- function(timestamp_file){
 
   # throw error

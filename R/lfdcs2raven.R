@@ -45,6 +45,7 @@ NULL
 #' @author Hansen Johnson (\email{hansen.johnson@@dal.ca})
 #' @importFrom magrittr %>%
 #'
+#' @export
 lfdcs_to_raven <- function(lfdcs_file,
                            raven_file = 'selections.txt',
                            audio_start_time,
