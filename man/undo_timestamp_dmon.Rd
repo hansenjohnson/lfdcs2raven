@@ -13,12 +13,8 @@ containing dmon wav and xml files}
 \description{
 Revert DMON wav files to original file names
 }
-\examples{
-undo_timestamp_dmon(timestamp_file = 'data/dmon/dmon_filenames.rds')
-
-}
 \seealso{
-[lfdcs2raven::timestamp_dmon()]
+\code{\link{undo_timestamp_dmon}}
 }
 \author{
 Hansen Johnson (\email{hansen.johnson@dal.ca})

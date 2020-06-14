@@ -41,24 +41,6 @@ marine mammal vocalizations in large datasets. This script converts a csv file o
 LFDCS autodetections (extracted from raw detector output using `export_autodetections`)
 into a text file that can be imported into Raven Pro as a selection table.
 }
-\examples{
-# export all autodetections
-lfdcs_to_raven(
- lfdcs_file = 'autodetections.csv',
- raven_file = 'selections.txt',
- audio_start_time = '2017-08-01 17:44:27',
-)
-
-# export high quality right whale autodetections
-lfdcs_to_raven(
- lfdcs_file = 'autodetections.csv',
- raven_file = 'selections.txt',
- audio_start_time = '2017-08-01 17:44:27',
- call_types = c(5,6,7,8,9),
- max_mdist = 3
-)
-
-}
 \author{
 Hansen Johnson (\email{hansen.johnson@dal.ca})
 }

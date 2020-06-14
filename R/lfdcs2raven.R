@@ -24,6 +24,7 @@ NULL
 #' @param f_buff The frequency buffer (in Hz) that is added to the top and bottom of each selection. This helps make the selection more visible in Raven.
 #'
 #' @examples
+#' '\dontrun{
 #' # export all autodetections
 #' lfdcs_to_raven(
 #'  lfdcs_file = 'autodetections.csv',
@@ -39,6 +40,7 @@ NULL
 #'  call_types = c(5,6,7,8,9),
 #'  max_mdist = 3
 #' )
+#'}
 #'
 #' @author Hansen Johnson (\email{hansen.johnson@@dal.ca})
 #' @importFrom magrittr %>%

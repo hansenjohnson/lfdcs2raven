@@ -14,9 +14,11 @@
 #' @param suffix String to be added to new filename after timestamp
 #'
 #' @examples
+#' '\dontrun{
 #' timestamp_dmon(dmon_dir = 'data/dmon/')
+#' }
 #'
-#' @seealso [lfdcs2raven::undo_timestamp_dmon()]
+#' @seealso \code{\link{undo_timestamp_dmon}}
 #'
 #' @author Hansen Johnson (\email{hansen.johnson@@dal.ca})
 #'
@@ -136,9 +138,11 @@ timestamp_dmon <- function(dmon_dir, prefix = '',suffix = ''){
 #' containing dmon wav and xml files
 #'
 #' @examples
+#' '\dontrun{
 #' undo_timestamp_dmon(timestamp_file = 'data/dmon/dmon_filenames.rds')
+#' }
 #'
-#' @seealso [lfdcs2raven::timestamp_dmon()]
+#' @seealso \code{\link{undo_timestamp_dmon}}
 #'
 #' @author Hansen Johnson (\email{hansen.johnson@@dal.ca})
 #'

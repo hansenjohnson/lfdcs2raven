@@ -25,12 +25,8 @@ The original and new timestamps will be saved in an R data file (`dmon_filenames
 See \code{undo_timestamp_dmon()} for how to convert back to the original timestamps.
 NOTE - this will only work for continuous DMON data (i.e., *not* duty cycled).
 }
-\examples{
-timestamp_dmon(dmon_dir = 'data/dmon/')
-
-}
 \seealso{
-[lfdcs2raven::undo_timestamp_dmon()]
+\code{\link{undo_timestamp_dmon}}
 }
 \author{
 Hansen Johnson (\email{hansen.johnson@dal.ca})
