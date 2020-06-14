@@ -34,6 +34,18 @@ timestamp_dmon(dmon_dir = 'data/dmon/')
 undo_timestamp_dmon(timestamp_file = 'data/dmon/dmon_filenames.rds')
 ```
 
+## Known issues / limitations
+
+- the `lfdcs_to_raven()` function is crude in that ignores the metadata in the header of the lfdcs autodetections file. Future versions may attempt to remedy this.
+
+- make sure the `lfdcs_start_time` argument is set correctly. Our deployments always use the unix convention (1970-01-01 00:00:00), but others may not. You can check the LFDCS paramfile or header of the autodetection file.
+
+- the dmon file renaming **only** works with continuous audio (i.e., gliders and not buoys)
+
+- the timestamp extraction in `timestamp_dmon()` is also crude, as it simply pulls the first available timestamp rather than the time associated with a specific event. Limited testing has suggested this is sufficient, but there may be shortcomings
+
+- there are no example data included with this package, as these data are large and often proprietary.
+
 ## sessionInfo
 
 Output from my sessionInfo():
