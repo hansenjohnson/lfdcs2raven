@@ -10,17 +10,17 @@
 #' @param f_buff The frequency buffer (in Hz) that is added to the top and bottom of each selection. This helps make the selection more visible in Raven.
 #' @examples
 #'
-#' #' # export all autodetections
+#' # export all autodetections
 #' lfdcs2raven(
-#'  lfdcs_file = 'data/raw/lfdcs/autodetections.csv',
-#'  raven_file = 'data/manual/selections.txt',
+#'  lfdcs_file = 'autodetections.csv',
+#'  raven_file = 'selections.txt',
 #'  audio_start_time = '2017-08-01 17:44:27',
 #' )
 #'
 #' # export high quality right whale autodetections
 #' lfdcs2raven(
-#'  lfdcs_file = 'data/raw/lfdcs/autodetections.csv',
-#'  raven_file = 'data/manual/selections.txt',
+#'  lfdcs_file = 'autodetections.csv',
+#'  raven_file = 'selections.txt',
 #'  audio_start_time = '2017-08-01 17:44:27',
 #'  call_types = c(5,6,7,8,9),
 #'  max_mdist = 3
