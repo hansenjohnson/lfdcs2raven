@@ -2,7 +2,7 @@
 % Please edit documentation in R/lfdcs2raven.R
 \name{lfdcs_to_raven}
 \alias{lfdcs_to_raven}
-\title{Generate a Raven selection table from LFDCS autodetections}
+\title{lfdcs_to_raven}
 \usage{
 lfdcs_to_raven(
   lfdcs_file,
@@ -35,17 +35,22 @@ lfdcs_to_raven(
 \description{
 Generate a Raven selection table from LFDCS autodetections
 }
+\details{
+The Low-Frequency Detection and Classification System (\href{https://www.whoi.edu/cms/files/JASMAN12952889_85804.pdf}{LFDCS}) automatically detects
+marine mammal vocalizations in large datasets. This script converts a csv file of
+LFDCS autodetections (extracted from raw detector output using `export_autodetections`)
+into a text file that can be imported into Raven Pro as a selection table.
+}
 \examples{
-
 # export all autodetections
-lfdcs2raven(
+lfdcs_to_raven(
  lfdcs_file = 'autodetections.csv',
  raven_file = 'selections.txt',
  audio_start_time = '2017-08-01 17:44:27',
 )
 
 # export high quality right whale autodetections
-lfdcs2raven(
+lfdcs_to_raven(
  lfdcs_file = 'autodetections.csv',
  raven_file = 'selections.txt',
  audio_start_time = '2017-08-01 17:44:27',
@@ -53,4 +58,7 @@ lfdcs2raven(
  max_mdist = 3
 )
 
+}
+\author{
+Hansen Johnson (\email{hansen.johnson@dal.ca})
 }

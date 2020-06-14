@@ -2,7 +2,7 @@
 % Please edit documentation in R/timestamp_dmon.R
 \name{timestamp_dmon}
 \alias{timestamp_dmon}
-\title{Add a timestamp DMON wav files}
+\title{timestamp_dmon}
 \usage{
 timestamp_dmon(dmon_dir, prefix = "", suffix = "")
 }
@@ -14,8 +14,11 @@ timestamp_dmon(dmon_dir, prefix = "", suffix = "")
 \item{suffix}{String to be added to new filename after timestamp}
 }
 \description{
-DMON hydrophones log audio data in a `wav` file and metadata in a `xml` file.
-This program simply renames the wav file to include the file start time, which
+Add a timestamp DMON wav files
+}
+\details{
+Digital acoustic monitoring instruments (DMON) hydrophones log audio data in a `wav` file
+and metadata in a `xml` file. This program simply renames the wav file to include the file start time, which
 is useful for viewing the data in other sound analysis software (such as Raven Pro).
 This is achieved by extracting the start time of the wav file from the associated xml header file.
 The original and new timestamps will be saved in an R data file (`dmon_filenames.rds`) in the dmon data directory.
@@ -24,4 +27,8 @@ NOTE - this will only work for continuous DMON data (i.e., *not* duty cycled).
 }
 \examples{
 timestamp_dmon(dmon_dir = 'data/dmon/')
+
+}
+\author{
+Hansen Johnson (\email{hansen.johnson@dal.ca})
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/timestamp_dmon.R
 \name{undo_timestamp_dmon}
 \alias{undo_timestamp_dmon}
-\title{Revert DMON wav files to original file names.}
+\title{undo_timestamp_dmon}
 \usage{
 undo_timestamp_dmon(timestamp_file)
 }
@@ -11,7 +11,7 @@ undo_timestamp_dmon(timestamp_file)
 containing dmon wav and xml files}
 }
 \description{
-Revert DMON wav files to original file names.
+Revert DMON wav files to original file names
 }
 \examples{
 undo_timestamp_dmon(timestamp_file = 'data/dmon/dmon_filenames.rds')
