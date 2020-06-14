@@ -2,7 +2,7 @@
 % Please edit documentation in R/timestamp_dmon.R
 \name{timestamp_dmon}
 \alias{timestamp_dmon}
-\title{timestamp_dmon}
+\title{Add a timestamp DMON wav files}
 \usage{
 timestamp_dmon(dmon_dir, prefix = "", suffix = "")
 }
@@ -28,6 +28,9 @@ NOTE - this will only work for continuous DMON data (i.e., *not* duty cycled).
 \examples{
 timestamp_dmon(dmon_dir = 'data/dmon/')
 
+}
+\seealso{
+[lfdcs2raven::undo_timestamp_dmon()]
 }
 \author{
 Hansen Johnson (\email{hansen.johnson@dal.ca})

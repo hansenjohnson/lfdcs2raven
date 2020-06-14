@@ -2,7 +2,7 @@
 % Please edit documentation in R/lfdcs2raven.R
 \name{lfdcs_to_raven}
 \alias{lfdcs_to_raven}
-\title{lfdcs_to_raven}
+\title{Generate a Raven selection table from LFDCS autodetections}
 \usage{
 lfdcs_to_raven(
   lfdcs_file,

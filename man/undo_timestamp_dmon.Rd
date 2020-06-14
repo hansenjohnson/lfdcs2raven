@@ -2,7 +2,7 @@
 % Please edit documentation in R/timestamp_dmon.R
 \name{undo_timestamp_dmon}
 \alias{undo_timestamp_dmon}
-\title{undo_timestamp_dmon}
+\title{Revert DMON wav files to original file names}
 \usage{
 undo_timestamp_dmon(timestamp_file)
 }
@@ -16,4 +16,10 @@ Revert DMON wav files to original file names
 \examples{
 undo_timestamp_dmon(timestamp_file = 'data/dmon/dmon_filenames.rds')
 
+}
+\seealso{
+[lfdcs2raven::timestamp_dmon()]
+}
+\author{
+Hansen Johnson (\email{hansen.johnson@dal.ca})
 }

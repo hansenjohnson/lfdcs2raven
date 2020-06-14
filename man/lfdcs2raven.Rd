@@ -3,4 +3,7 @@
 \docType{package}
 \name{lfdcs2raven}
 \alias{lfdcs2raven}
-\title{lfdcs2raven: A package for reviewing LFDCS output in Raven Pro}
+\title{lfdcs2raven}
+\description{
+A simple package for reviewing LFDCS output in Raven Pro
+}

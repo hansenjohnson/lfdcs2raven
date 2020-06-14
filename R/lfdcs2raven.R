@@ -1,12 +1,12 @@
-#' lfdcs2raven: A package for reviewing LFDCS output in Raven Pro
+#' lfdcs2raven
+#'
+#' A simple package for reviewing LFDCS output in Raven Pro
 #'
 #' @docType package
 #' @name lfdcs2raven
 NULL
 
-#' @title lfdcs_to_raven
-#' @name lfdcs_to_raven
-#' @description Generate a Raven selection table from LFDCS autodetections
+#' Generate a Raven selection table from LFDCS autodetections
 #'
 #' @details
 #' The Low-Frequency Detection and Classification System (\href{https://www.whoi.edu/cms/files/JASMAN12952889_85804.pdf}{LFDCS}) automatically detects
