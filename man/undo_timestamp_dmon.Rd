@@ -14,7 +14,7 @@ containing dmon wav and xml files}
 Revert DMON wav files to original file names
 }
 \seealso{
-\code{\link{undo_timestamp_dmon}}
+\code{\link{timestamp_dmon}}
 }
 \author{
 Hansen Johnson (\email{hansen.johnson@dal.ca})

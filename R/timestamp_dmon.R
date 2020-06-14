@@ -142,7 +142,7 @@ timestamp_dmon <- function(dmon_dir, prefix = '',suffix = ''){
 #' undo_timestamp_dmon(timestamp_file = 'data/dmon/dmon_filenames.rds')
 #' }
 #'
-#' @seealso \code{\link{undo_timestamp_dmon}}
+#' @seealso \code{\link{timestamp_dmon}}
 #'
 #' @author Hansen Johnson (\email{hansen.johnson@@dal.ca})
 #'
