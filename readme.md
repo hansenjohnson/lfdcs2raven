@@ -34,6 +34,42 @@ timestamp_dmon(dmon_dir = 'data/dmon/')
 undo_timestamp_dmon(timestamp_file = 'data/dmon/dmon_filenames.rds')
 ```
 
+## Running the LFDCS
+
+This only applies to users that are running the LFDCS and then converting the autodetections to raven selections
+
+1. Run the LFDCS
+Create your `paramfile.txt` and run the detector using the following
+```
+# move to the main program directory
+cd ~/Projects/Detectors/lfdcs/process
+
+# switch from bash to tcsh shell
+tcsh
+
+# open idl
+idl
+
+# run the detector
+reformat_detect_classify, paramfile.txt
+```
+
+2. Extract autodetections
+Here's an example of how to extract autodetections of right whale upcalls (call types 5,6,7,8,9)
+```
+export_autodetections, 'lfdcs/lfdcs_file_index.nc', [5,6,7,8,9,10], 'lfdsc_autodetections.csv'
+```
+
+3. Convert LFDCS autodetections to Raven selection table
+This is done in R using the package described here
+```
+lfdcs_to_raven(lfdcs_file = 'lfdcs_autodetections.csv',
+               raven_file = 'raven_selections.txt',
+               call_types = c(5,6,7,8,9,10),
+               max_mdist = 3,
+               audio_start_time = '2017-01-01 00:00:00')
+```
+
 ## Known issues / limitations
 
 - the `lfdcs_to_raven()` function is crude in that ignores the metadata in the header of the lfdcs autodetections file. Future versions may attempt to remedy this.
