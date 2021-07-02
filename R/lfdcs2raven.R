@@ -119,7 +119,7 @@ lfdcs_to_raven <- function(lfdcs_file,
   )
 
   # save output
-  write.table(rv, raven_file, sep = '\t',quote = FALSE, row.names = FALSE)
+  utils::write.table(rv, raven_file, sep = '\t',quote = FALSE, row.names = FALSE)
   message('Selection table saved as: ', raven_file)
 
 }
