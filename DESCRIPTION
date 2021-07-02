@@ -7,10 +7,10 @@ Maintainer: Hansen Johnson <hansen.johnson@dal.ca>
 Description: Format autodetections of whale vocalizations from the 
     Low Frequency Detection and Classification System (LFDCS) to be viewable
     using Raven Pro sound analysis software.
-License: GPL-3.0
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Imports:
     readr,
     magrittr,
